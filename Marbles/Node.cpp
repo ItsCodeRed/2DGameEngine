@@ -1,11 +1,27 @@
 #include "Node.h"
 
-void Node::Refresh(const float dt)
+void Node::Initialize()
 {
-	Update(dt);
+	Start();
+	hasStarted = true;
 
 	for (Node* node : nodes)
 	{
-		node->Refresh(dt);
+		node->Initialize();
+	}
+}
+
+void Node::Refresh(const float dt)
+{
+	if (!hasStarted)
+	{
+		Start();
+	}
+
+	Update(dt); // update every frame
+
+	for (Node* node : nodes)
+	{
+		node->Refresh(dt); // updates child nodes every frame
 	}
 }

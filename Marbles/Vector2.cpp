@@ -24,3 +24,8 @@ Vec2 operator/(const float n, const Vec2& v)
 {
 	return Vec2(v.x / n, v.y / n);
 }
+
+Vec2 Vec2::normalize()
+{
+	return *this / magnitude();
+}

@@ -2,7 +2,9 @@
 C:\Users\ellio\source\repos\Marbles\Marbles\CircleNode.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ellio\source\repos\Marbles\Marbles\CircleNode.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   PhysicsBody.cpp
+C:\Users\ellio\source\repos\Marbles\Marbles\PhysicsBody.h(9,19): warning C4305: 'initializing': truncation from 'double' to 'float'
 C:\Users\ellio\source\repos\Marbles\Marbles\CircleNode.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ellio\source\repos\Marbles\Marbles\CircleNode.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Renderer.cpp
   Generating Code...
   Marbles.vcxproj -> C:\Users\ellio\source\repos\Marbles\Debug\Marbles.exe

@@ -1,5 +1,7 @@
 #include "WindowManager.h"
 
+WindowManager* WindowManager::currentWindow = nullptr;
+
 void WindowManager::CreateWindow(Vec2 size)
 {
 	windowSize = size;

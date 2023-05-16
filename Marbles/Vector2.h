@@ -1,4 +1,5 @@
 #pragma once
+
 #include <iostream>
 
 class Vec2
@@ -62,12 +63,36 @@ public:
 		return *this;
 	}
 
+	Vec2& operator*=(const float n)
+	{
+		x *= n;
+		y *= n;
+		return *this;
+	}
+
 	Vec2& operator/=(const Vec2& other)
 	{
 		x /= other.x;
 		y /= other.y;
 		return *this;
 	}
+
+	float sqrMagnitude()
+	{
+		return x * x + y * y;
+	}
+
+	float magnitude()
+	{
+		return sqrt(sqrMagnitude());
+	}
+
+	float dot(const Vec2& v)
+	{
+		return x * v.x + y * v.y;
+	}
+
+	Vec2 normalize();
 };
 
 std::ostream& operator << (std::ostream& outs, const Vec2& v);
